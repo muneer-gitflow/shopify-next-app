@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "2e18199fca45be0a5c9e2a29c2e67205"
+name = "gitspark-mobile-app-builder"
+application_url = "https://32a4-5-30-0-60.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "gitspark-perfumez-demo.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://32a4-5-30-0-60.ngrok-free.app/auth/callback",
+  "https://32a4-5-30-0-60.ngrok-free.app/auth/shopify/callback",
+  "https://32a4-5-30-0-60.ngrok-free.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-10"
+
+[pos]
+embedded = false

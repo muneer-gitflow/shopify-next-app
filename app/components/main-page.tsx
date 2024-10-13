@@ -69,6 +69,13 @@ export default function Home({ shop }: { shop: string }) {
           We can also use tailwindcss in this project!
         </p>
       </div>
+
+      <div className="flex items-center justify-center gap-1 p-2 bg-orange-400 text-white rounded-lg mb-2">
+        <p className="font-medium text-[1rem]">
+          TODO : Pass session token to the backend and use it to query the
+          database
+        </p>
+      </div>
       <Card
         sectioned
         title="NextJs API Routes"

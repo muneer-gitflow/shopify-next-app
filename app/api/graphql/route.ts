@@ -13,6 +13,9 @@ export async function POST(req: Request) {
     throw new Error("No sesssion found.");
   }
 
+  console.log("session", session);
+  console.log("text", text);
+
   try {
     const response = await shopify.clients.graphqlProxy({
       rawBody: text,
